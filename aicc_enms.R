@@ -41,7 +41,7 @@ AICc_enm <- function(suits, suits_pts, n_pars){
   exp_aic <- exp(-0.5 * aic_delta)
   aic_w <- exp_aic / sum(exp_aic)
   resu <- data.frame(AICc= round(aic_res, 1), DeltaAIC = round(aic_delta, 2),
-                     AICw = round(aic_w[,1], 2), Parameters = n_pars,
+                     AICw = round(aic_w, 2), Parameters = n_pars,
                      row.names = model_names)
   return(resu)
 }
