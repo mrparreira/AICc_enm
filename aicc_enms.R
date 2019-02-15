@@ -37,7 +37,6 @@ AICc_enm <- function(suits, suits_pts, n_pars){
     }
   }
   aic_delta <- aic_res - min(aic_res)
-  aic_delta[which.min(aic_delta)] <- 0
   exp_aic <- exp(-0.5 * aic_delta)
   aic_w <- exp_aic / sum(exp_aic)
   resu <- data.frame(AICc= round(aic_res, 1), DeltaAIC = round(aic_delta, 2),
