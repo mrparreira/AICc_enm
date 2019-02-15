@@ -1,8 +1,8 @@
-## Function to calculate AICc for ENMs
+## Function to calculate AICc for 1 or 1+ Ecological Niche Models at once.
+#                                           Micael Parreira, February 2019
 
-# For details on inputs of this function,
-# please read the readme file in the repository.
-#################                               Micael Parreira, February 2019
+
+# For details on inputs of this function, please read the readme file in the repository.
 
 AICc_enm <- function(suits, suits_pts, n_pars){
   if(length(n_pars) != dim(suits)[2]){
