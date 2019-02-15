@@ -1,5 +1,5 @@
 ## Function to calculate AICc for multiple Ecological Niche Models.
-#                                           Micael Parreira, February 2019
+#                                    Micael Parreira, February 2019
 
 
 # For details on inputs of this function, please read the readme file in the repository.
