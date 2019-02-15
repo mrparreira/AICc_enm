@@ -36,7 +36,7 @@ AICc_enm <- function(suits, suits_pts, n_pars){
       model_names[j] <- colnames(suit.pts[j])
     }
   }
-  aic_delta <- aic_res / min(aic_res)
+  aic_delta <- aic_res - min(aic_res)
   aic_delta[which.min(aic_delta)] <- 0
   exp_aic <- exp(-0.5 * aic_delta)
   aic_w <- exp_aic / sum(exp_aic)
